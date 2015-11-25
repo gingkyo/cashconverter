@@ -1,0 +1,19 @@
+  <div class="modal" ng-model="storageOption">
+    <!--header bar with search-->
+    <ion-header-bar class="bar-secondary bar-energized">
+      <label class="col col-80 item item-input">
+        <i class="icon ion-search placeholder-icon"></i>
+         <input type="search" placeholder="Search.." ng-model="searchCountryList">
+       </label>
+      <button class="button button-small button-light"
+      ng-click="countryClose()">Cancel</button>
+    </ion-header-bar>
+    <!--country list-->
+    <ion-content>
+      <ion-list>
+        <ion-item ng-repeat="country in countries |filter: searchCountryList"
+        ng-click="selectCountry(country)">{{country.name}} {{country.currency}}
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </div>

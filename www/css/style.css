@@ -1,0 +1,71 @@
+.bgMain {
+  -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+  -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+  -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+
+  padding-top: 60px;
+  padding-bottom:60px;
+
+  background-image:linear-gradient(top,#dd7d27 0%, #ffff00 50%, #dd7d27 75%);
+  background-image:-webkit-linear-gradient(top,#dd7d27 0%, #ffff00 50%, #dd7d27 75%);
+  background-image:-ms-linear-gradient(top,#dd7d27 0%, #ffff00 50%, #dd7d27 75%);
+  background-image:-webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      color-stop(0, #dd7d27),
+      color-stop(0.50, #ffff00),
+      color-stop(0.75, #dd7d27)
+
+  );
+  background-attachment:fixed;
+  font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+  font-size:12px;
+  height:100%;
+  margin:0px;
+
+  width:100%;
+}
+.labelTxtSmall{
+  font-size:10px;
+}
+.brandOrange{
+  background-color: #dd7d27;
+}
+#logoImg{
+  width:100%;
+  margin-bottom:20px;
+}
+#logoBanner{
+  width:100%;
+  margin-bottom:20px;
+}
+.thumbnailSize{
+  max-height:40px;
+  max-width:40px;
+}
+.text-Energized{
+  color:#f0b840;
+}
+.scroll-content{
+  top: 0 !important;
+  bottom: 0 !important;
+}
+
+.has-header{
+  padding-top:44px !important;
+}
+
+..has-footer{
+  padding-bottom:44px !important;
+}
+
+.bar-positive{
+  background: rgba(20, 20, 20, 0) !important;
+}
+.card .item{
+  background: rgba(125, 125, 125, 0.5) !important;
+  padding:15px;
+  border: 0px !important;
+
+}

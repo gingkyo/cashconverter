@@ -1,0 +1,50 @@
+<ion-view>
+  <ion-nav-title class="text-Energized">Convert</ion-nav-title>
+  <ion-content class="bgMain">
+    <div class="list card bar-positive">
+      <div class="item item-divider">My Home</div>
+      <div class="item item-body item-avatar row  bar-positive">
+        <div class="col col-80">
+          <label id="myHome"><img src={{homeFlag}} class="thumbnailSize">
+            {{homeCountry}} {{homeCurrency}}</label>
+        </div>
+        <div class="col col-20">
+          <button class="button button-small button-light"
+          id="setHome" ng-click="countryOpen('home')">Change</button>
+        </div>
+      </div>
+      <div class="item item-divider">Convert to</div>
+      <div class="item item-body item-avatar row">
+        <div class="col col-80">
+          <label id="Convert"><img src={{convertFlag}} class="thumbnailSize">
+            {{convertCountry}} {{convertCurrency}}</label>
+        </div>
+        <div class="col col-20">
+          <button class="button button-small button-light"
+          id="setConvertCountry"ng-click="countryOpen('convertTo')">Change</button>
+        </div>
+      </div>
+    <div class="item item-divider">Current Exchange Rate</div>
+    <div class="item item-body row">
+      <div class="col">
+        <label id="currentXrate">{{selectedCountries}}{{currentXrate}}</label>
+      </div>
+      <div class="col">
+        <label class="labelTxtSmall"id="lastUpdate">{{lastUpdate}}</label>
+      </div>
+    </div>
+  </div>
+      <div class="list card bar-positive">
+      <div class="item item-body row">
+        <div class="col col-80">
+          <!--Enter amount input box for converter goes here-->
+                <input type="number" ng-model="convert.amount" placeholder=" enter amount">
+            <label id="conversion">{{calcTotal}}</label>
+        </div>
+        <div class="col col-20">
+          <button class="button button-small button-light" ng-click= "calcConvert(convert.amount)" id="calcConvert">Convert</button>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>
