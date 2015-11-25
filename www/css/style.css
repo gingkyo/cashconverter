@@ -6,16 +6,16 @@
   padding-top: 60px;
   padding-bottom:60px;
 
-  background-image:linear-gradient(top,#dd7d27 0%, #ffff00 50%, #dd7d27 75%);
-  background-image:-webkit-linear-gradient(top,#dd7d27 0%, #ffff00 50%, #dd7d27 75%);
-  background-image:-ms-linear-gradient(top,#dd7d27 0%, #ffff00 50%, #dd7d27 75%);
+  background-image:linear-gradient(top,#0099cc 0%, #ccffcc 50%, #66ccff 75%);
+  background-image:-webkit-linear-gradient(top,#0099cc 0%, #ccffcc 50%, #66ccff 75%);
+  background-image:-ms-linear-gradient(top,#0099cc 0%, #ccffcc 50%, #66ccff 75%);
   background-image:-webkit-gradient(
       linear,
       left top,
       left bottom,
-      color-stop(0, #dd7d27),
-      color-stop(0.50, #ffff00),
-      color-stop(0.75, #dd7d27)
+      color-stop(0, #0099cc),
+      color-stop(0.50, #ccffcc),
+      color-stop(0.75, #66ccff)
 
   );
   background-attachment:fixed;
@@ -29,8 +29,8 @@
 .labelTxtSmall{
   font-size:10px;
 }
-.brandOrange{
-  background-color: #dd7d27;
+.brandColor{
+  background-color: #66ccff;
 }
 #logoImg{
   width:100%;
@@ -44,9 +44,6 @@
   max-height:40px;
   max-width:40px;
 }
-.text-Energized{
-  color:#f0b840;
-}
 .scroll-content{
   top: 0 !important;
   bottom: 0 !important;
@@ -55,8 +52,7 @@
 .has-header{
   padding-top:44px !important;
 }
-
-..has-footer{
+.has-footer{
   padding-bottom:44px !important;
 }
 
