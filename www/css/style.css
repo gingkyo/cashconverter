@@ -45,17 +45,16 @@
   max-width:40px;
 }
 .scroll-content{
+  /*overridden settings below allow for transparency on nav bars and also cards */
   top: 0 !important;
   bottom: 0 !important;
 }
-
 .has-header{
   padding-top:44px !important;
 }
 .has-footer{
   padding-bottom:44px !important;
 }
-
 .bar-positive{
   background: rgba(20, 20, 20, 0) !important;
 }

@@ -45,15 +45,6 @@ angular.module('convert', ['ionic','convert.controllers', 'convert.services'])
         }
       }
     })
-    .state('tab.weather', {
-      url: '/weather',
-      views: {
-        'tab-weather': {
-          templateUrl: 'templates/tab-weather.html',
-          controller: 'weatherCtrl'
-        }
-      }
-    })
   .state('tab.account', {
     url: '/account',
     views: {

@@ -103,12 +103,6 @@ angular.module('convert.controllers', [])
     $scope.getXrate();
   }
 })//end controller
-
-.controller('weatherCtrl', function($scope) {
-
-})
 .controller('accountCtrl', function($scope) {
-  $scope.settings = {
-    enableFriends: true
-  };
+
 });
