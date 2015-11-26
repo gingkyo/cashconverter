@@ -1,0 +1,38 @@
+.bgMain {
+  -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+  -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+  -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+
+  padding-top: 50px;
+  padding-bottom:70px;
+
+  background-image:linear-gradient(top, #ffff00 0%, #dd7d27 51%);
+  background-image:-webkit-linear-gradient(top, #ffff00 0%, #dd7d27 51%);
+  background-image:-ms-linear-gradient(top, #ffff00 0%, #dd7d27 51%);
+  background-image:-webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      color-stop(0, #ffff00),
+      color-stop(0.51, #dd7d27)
+
+  );
+  background-attachment:fixed;
+  font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+  font-size:12px;
+  height:100%;
+  margin:0px;
+  text-transform:uppercase;
+  width:100%;
+}
+.brandOrange{
+  background-color: #dd7d27;
+}
+#logoImg{
+  width:100%;
+  margin-bottom:20px;
+}
+#logoBanner{
+  width:100%;
+  margin-bottom:20px;
+}

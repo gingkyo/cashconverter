@@ -1,0 +1,110 @@
+<ion-view view-title="Convert" >
+  <ion-content class="brandOrange">
+    <div class="list card">
+      <div class="item item-divider">My Home</div>
+      <div class="item item-body row">
+        <div class="col col-80">
+          <label id="myHome">{{homeCountry}},{{homeCurrency}}</label>
+        </div>
+        <div class="col col-20">
+          <button class="button button-small button-dark"
+          id="setHome" ng-click="countryOpen('homeCountry')">Change</button>
+        </div>
+      </div>
+      <div class="item item-divider">Convert to</div>
+      <div class="item item-body row">
+        <div class="col col-80">
+          <label id="Convert">{{convertCountry}},{{convertCurrency}}</label>
+        </div>
+        <div class="col col-20">
+          <button class="button button-small button-dark"
+          id="setConvertCountry"ng-click="countryOpen('convertCountry')">Change</button>
+        </div>
+      </div>
+    <div class="item item-divider">Current Exchange Rate</div>
+    <div class="item item-body row">
+      <div class="col col-80">
+        <label id="currentXrate">{{homeCurrency}}-->{{convertCurrency}}={{currentXrate}}</label>
+      </div>
+      <div class="col col-20">
+        <button class="button button-small button-dark padding-left padding-right"
+        id="refereshXrate"ng-click="getXrate()"><i class="icon ion-ios-loop"></i>
+      </button>
+      </div>
+    </div>
+  </div>
+      <div class="list card">
+      <div class="item item-body row">
+        <div class="col col-80">
+                <input type="number" ng-model="convert.amount" placeholder="enter Amount">
+            <label id="conversion">{{inputAmount}} {{homeCurrency}}
+              ={{calcTotal}}{{convertCurrency}}</label>
+        </div>
+        <div class="col col-20">
+          <button class="button button-small" ng-click= "calcConvert(convert.amount)" id="calcConvert">Convert</button>
+        </div>
+      </div>
+    </div>
+
+
+
+
+  </ion-content>
+</ion-view>
+
+
+
+<!--<div id="settingsPage" style="display:none"
+class="container panel panel-warning panelSpacer">
+<div class="panel-heading"><h5 id="panelTitle"></h5></div>
+<div class="panel-body input-group">
+<label id="lblMyHome">myHome:</label>
+<label id="myHome"></label>
+<span class="input-group-btn">
+<button class="btn btn-default btn-sm" id="setHome">Change</button>
+</span>
+</div>
+<div class="panel-body input-group">
+<label id="lblConvertTo">Convert to:</label>
+<label id="convertTo"></label>
+<span class="input-group-btn">
+<button class="btn btn-default btn-sm"id="setConvertTo">Change</button>
+</span>
+</div>
+<button class="btn btn-success btn-block" id="savedXrates">Show Current Rates</button>
+<div class="alert-warning" role="group">
+<button class="btn btn-default btn-sm"id="downloadXRate">Get Current Rate</button>
+<button class="btn btn-default btn-sm"id="downloadXRate">Add Manually</button>
+</div>
+
+<ion-view view-title="Dashboard">
+<ion-content class="padding">
+<div class="list card">
+<div class="item item-divider">My Home</div>
+<div class="item item-body">
+<div class="col">
+<label id="myHome"></label>
+</div>
+<div class="col">
+<button class="button button-small" id="setHome">Change</button>
+</div>
+</div>
+</div>
+<div class="list card">
+<div class="item item-divider">Health</div>
+<div class="item item-body">
+<div>
+You ate an apple today!
+</div>
+</div>
+</div>
+<div class="list card">
+<div class="item item-divider">Upcoming</div>
+<div class="item item-body">
+<div>
+You have <b>29</b> meetings on your calendar tomorrow.
+</div>
+</div>
+</div>
+</ion-content>
+</ion-view>-->

@@ -1,0 +1,18 @@
+  <div class="modal" ng-model="storageOption">
+    <ion-header-bar class="bar-secondary">
+      <h1 class="title">Select a Country</h1>
+      <button class="button button-clear button-positive" ng-click="countryClose()">Cancel</button>
+    </ion-header-bar>
+    <ion-content>
+      <ion-list>
+        <label class="item-input-wrapper padding">
+          <i class="icon ion-ios-search placeholder-icon"></i>
+          <input type="text" ng-model="query" placeholder="search">
+        </label>
+        <ion-item ng-repeat="country in countries | filter:query" ng-click="selectCountry(country)">
+          {{country.name}},{{country.currency}}
+        </ion-item>
+      </ion-list>
+      <!--<form ng-submit="createTask(task)">-->
+    </ion-content>
+  </div>
